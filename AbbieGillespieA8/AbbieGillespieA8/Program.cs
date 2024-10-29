@@ -1,10 +1,13 @@
-﻿namespace AbbieGillespieA8
+﻿using AbbieGillespieA8.Driver;
+
+namespace AbbieGillespieA8
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            MyDriver driver = new MyDriver();
+            driver.Run();
         }
     }
 }
