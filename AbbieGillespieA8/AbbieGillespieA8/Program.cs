@@ -8,6 +8,8 @@ namespace AbbieGillespieA8
         {
             MyDriver driver = new MyDriver();
             driver.Run();
+            driver.LongerThanFive();
+            driver.GoodPrice();
         }
     }
 }
