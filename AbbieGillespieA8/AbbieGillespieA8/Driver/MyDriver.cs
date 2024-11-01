@@ -52,5 +52,17 @@ namespace AbbieGillespieA8.Driver
             controller.GetAllHousesMoreThanOneForty();
             Console.WriteLine(Environment.NewLine);
         }
+
+        public void HousesByState()
+        {
+            controller.GetHousesOrderedByState();
+            Console.WriteLine(Environment.NewLine);
+        }
+
+        public void HouseUnderFourMonths()
+        {
+            controller.GetHouseOnLessThanFourMonths();
+            Console.WriteLine(Environment.NewLine);
+        }
     }
 }

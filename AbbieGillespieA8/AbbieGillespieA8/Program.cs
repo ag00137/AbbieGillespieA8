@@ -12,6 +12,8 @@ namespace AbbieGillespieA8
             driver.GoodPrice();
             driver.ThreeStates();
             driver.HouseZipCodes();
+            driver.HousesByState();
+            driver.HouseUnderFourMonths();
         }
     }
 }

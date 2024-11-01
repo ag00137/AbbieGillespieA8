@@ -81,5 +81,49 @@ namespace AbbieGillespieA8.Linq
             }
         }
 
+        public void GetHousesOrderedByState()
+        {
+            var dataImporter = new DataImporter();
+
+            List<House> houses = dataImporter.ImportData();
+
+            var states = from house in houses
+                         where house.State == "GA" || house.State == "NY" || house.State == "TX"
+                         orderby house.Price descending
+                         group house by house.State into stateGroup
+                         select stateGroup;
+
+            foreach (var group in states)
+            {
+                Console.WriteLine($"Current State: {group.Key}");
+
+                foreach (var house in group)
+                {
+                    Console.WriteLine(house);
+                }
+            }                        
+        }
+
+        public void GetHouseOnLessThanFourMonths()
+        {
+            var dataImporter = new DataImporter();
+
+            List<House> houses = dataImporter.ImportData();
+
+            var months = from house in houses
+                         where house.Price > 250000 && house.TimeOnMarket < 6
+                         orderby house.Price
+                         group house by house.State into stateGroup
+                         select stateGroup;
+
+            foreach (var group in months)
+            {
+                Console.WriteLine($"Current State: {group.Key}");
+                foreach (var house in group)
+                {
+                    Console.WriteLine(house);
+                }
+            }                        
+        }
         }
     }

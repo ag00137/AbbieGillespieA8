@@ -29,7 +29,7 @@ namespace AbbieGillespieA8.Data
 
         public override string ToString()
         {
-            return $"House: {Address} - Listed at: ${Price} - On Market: {TimeOnMarket} Months";
+            return $"House: {Address}, {City}, {State}, {ZipCode} - Listed at: ${Price} - On Market: {TimeOnMarket} Months";
         }
     }
 }

@@ -1,0 +1,3 @@
+﻿For my custom query I compared the state and price properties. I searched for and got a collection of houses that have been
+on the market for less than 6 months and are more than 250 thousand dollars. I also grouped them by state and ordered them by
+ascending price.
