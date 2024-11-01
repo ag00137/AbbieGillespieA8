@@ -38,5 +38,19 @@ namespace AbbieGillespieA8.Driver
             controller.GetLowPriceHousesOnLongerThanFiveMonths();
             Console.WriteLine(Environment.NewLine);
         }
+
+        public void ThreeStates()
+        {
+            Console.WriteLine("Houses in GA, NY, and TX that are more than $140,000:");
+            controller.GetHousesInThreeStates();
+            Console.WriteLine(Environment.NewLine);
+        }
+
+        public void HouseZipCodes()
+        {
+            Console.WriteLine("Houses that are more than $140,000:");
+            controller.GetAllHousesMoreThanOneForty();
+            Console.WriteLine(Environment.NewLine);
+        }
     }
 }

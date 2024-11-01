@@ -46,5 +46,40 @@ namespace AbbieGillespieA8.Linq
                 Console.WriteLine(house);
             }
         }
+
+        public void GetHousesInThreeStates()
+        {
+            var dataImporter = new DataImporter();
+
+            List<House> houses = dataImporter.ImportData();
+
+            var threeStates = from house in houses
+                              where house.Price > 140000 && house.State == "GA" || house.State == "NY" || house.State == "TX"
+                              orderby house.Price 
+                              select house;
+
+            foreach (var house in threeStates)
+            {
+                Console.WriteLine(house);
+            }
+        }
+
+        public void GetAllHousesMoreThanOneForty()
+        {
+            var dataImporter = new DataImporter();
+
+            List<House> houses = dataImporter.ImportData();
+
+            var zipCodes = from house in houses
+                           where house.Price > 140000
+                           orderby house.ZipCode descending
+                           select house;
+
+            foreach (var house in zipCodes)
+            {
+                Console.WriteLine(house);
+            }
+        }
+
+        }
     }
-}

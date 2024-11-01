@@ -10,6 +10,8 @@ namespace AbbieGillespieA8
             driver.Run();
             driver.LongerThanFive();
             driver.GoodPrice();
+            driver.ThreeStates();
+            driver.HouseZipCodes();
         }
     }
 }
