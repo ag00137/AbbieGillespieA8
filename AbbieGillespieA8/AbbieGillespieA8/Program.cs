@@ -9,11 +9,17 @@ namespace AbbieGillespieA8
             MyDriver driver = new MyDriver();
             driver.Run();
             driver.LongerThanFive();
+            driver.LamMoreThanFive();
             driver.GoodPrice();
+            driver.GoodPriceLam();
             driver.ThreeStates();
+            driver.ThreeStatesLam();
             driver.HouseZipCodes();
+            driver.HouseZipCodesLam();
             driver.HousesByState();
+            driver.HousesByStateLam();
             driver.HouseUnderFourMonths();
+            driver.HouseUnderFourMonthsLam();
         }
     }
 }
