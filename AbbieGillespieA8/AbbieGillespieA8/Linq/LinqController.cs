@@ -8,15 +8,22 @@ using AbbieGillespieA8.Data;
 
 namespace AbbieGillespieA8.Linq
 {
+    /// <summary>
+    /// Class that holds the methods searching through the json file data.
+    /// </summary>
     public class LinqController
-    {
-        
-
+    {       
+        /// <summary>
+        /// Initializes the LinqController constructor.
+        /// </summary>
         public LinqController()
         {
            
         }
 
+        /// <summary>
+        /// Searches through the data for houses that have been on the market for longer than five months then writes them out.
+        /// </summary>
         public void GetHousesOnLongerThanFiveMonths()
         {
             var dataImporter = new DataImporter();
@@ -33,6 +40,9 @@ namespace AbbieGillespieA8.Linq
             }
         }
 
+        /// <summary>
+        /// Searches through the data for houses that have been on the market for longer than five months then writes them out.
+        /// </summary>
         public void GetHouseOnMoreThanFiveMonths()
         {
             var dataImporter = new DataImporter();
@@ -48,6 +58,10 @@ namespace AbbieGillespieA8.Linq
 
         }
 
+        /// <summary>
+        /// Searches for houses that have been on the market for longer than five months and are less than 175 thousand dollars
+        /// then writes them out.
+        /// </summary>
         public void GetLowPriceHousesOnLongerThanFiveMonths()
         {
             var dataImporter = new DataImporter();
@@ -63,6 +77,10 @@ namespace AbbieGillespieA8.Linq
             }
         }
 
+        /// <summary>
+        /// Searches for houses that have been on the market for longer than five months and are less than 175 thousand dollars
+        /// then writes them out.
+        /// </summary>
         public void GetGoodHousePriceLam()
         {
             var dataImporter = new DataImporter();
@@ -77,6 +95,10 @@ namespace AbbieGillespieA8.Linq
             }
         }
 
+        /// <summary>
+        /// Searches for houses that are within GA, NY, and TX that cost more than 140 thousand dollars then writes them out in 
+        /// order of their price.
+        /// </summary>
         public void GetHousesInThreeStates()
         {
             var dataImporter = new DataImporter();
@@ -94,6 +116,10 @@ namespace AbbieGillespieA8.Linq
             }
         }
 
+        /// <summary>
+        /// Searches for houses that are within GA, NY, and TX that cost more than 140 thousand dollars then writes them out in 
+        /// order of their price.
+        /// </summary>
         public void GetHousesInThreeStatesLam()
         {
             var dataImporter = new DataImporter();
@@ -110,6 +136,9 @@ namespace AbbieGillespieA8.Linq
             }
         }
 
+        /// <summary>
+        /// Searches for houses that cost more than 140 thousand dollars and writes them out in descending order by their zip codes.
+        /// </summary>
         public void GetAllHousesMoreThanOneForty()
         {
             var dataImporter = new DataImporter();
@@ -127,6 +156,9 @@ namespace AbbieGillespieA8.Linq
             }
         }
 
+        /// <summary>
+        /// Searches for houses that cost more than 140 thousand dollars and writes them out in descending order by their zip codes.
+        /// </summary>
         public void GetAllHousesMoreThanOneFortyLam()
         {
             var dataImporter = new DataImporter();
@@ -144,6 +176,10 @@ namespace AbbieGillespieA8.Linq
             }
         }
 
+        /// <summary>
+        /// Searches for houses that are from the states GA, NY, and TX then are written out by their state and price in descending
+        /// order.
+        /// </summary>
         public void GetHousesOrderedByState()
         {
             var dataImporter = new DataImporter();
@@ -167,6 +203,10 @@ namespace AbbieGillespieA8.Linq
             }                        
         }
 
+        /// <summary>
+        /// Searches for houses that are from the states GA, NY, and TX then are written out by their state and price in descending
+        /// order.
+        /// </summary>
         public void GetHousesOrderedByStateLam()
         {
             var dataImporter = new DataImporter();
@@ -190,6 +230,10 @@ namespace AbbieGillespieA8.Linq
             }
         }
 
+        /// <summary>
+        /// Searches for houses that have been on the market for less than six months and cost more than 250 thousand dollars
+        /// then written out by hteir state and are odered by price.
+        /// </summary>
         public void GetHouseOnLessThanFourMonths()
         {
             var dataImporter = new DataImporter();
@@ -212,6 +256,10 @@ namespace AbbieGillespieA8.Linq
             }                        
         }
 
+        /// <summary>
+        /// Searches for houses that have been on the market for less than six months and cost more than 250 thousand dollars
+        /// then written out by hteir state and are odered by price.
+        /// </summary>
         public void GetHouseOnLessThanFourMonthsLam()
         {
             var dataImporter = new DataImporter();

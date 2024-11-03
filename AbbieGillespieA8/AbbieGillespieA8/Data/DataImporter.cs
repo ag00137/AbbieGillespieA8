@@ -10,8 +10,15 @@ using System.Runtime.ConstrainedExecution;
 
 namespace AbbieGillespieA8.Data
 {
+    /// <summary>
+    /// Class that retrieves the json file.
+    /// </summary>
     public class DataImporter
     {
+        /// <summary>
+        /// Imports the data.
+        /// </summary>
+        /// <returns>A list of the house data.</returns>
         public List<House> ImportData()
         {
             string file = "HouseData.json";
